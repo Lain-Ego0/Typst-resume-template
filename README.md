@@ -1,142 +1,88 @@
-# Typst 简历模板（分层目录版）
+# Typst 中文简历模板（给非开发者）
 
-本仓库提供两个中文 Typst 简历模板（无头像 / 有头像），并已经按 `typ / images / pdf` 分层整理，方便长期维护。
+这是一个可以直接改内容、导出 PDF 的简历模板库。  
+你不需要会编程，按下面步骤操作即可。
 
-## 目录结构
+## 先看文件夹
 
 ```text
 Typst-resume-template/
-├─ typ/
-│  ├─ no_profile_picture.typ
-│  └─ with_profile_picture.typ
-├─ images/
-│  └─ image.png
-├─ pdf/
-│  ├─ no_profile_picture.pdf
-│  └─ with_profile_picture.pdf
-├─ README.md
-└─ LICENSE
+├─ typ/      简历模板（在这里改文字）
+├─ images/   头像图片（可选）
+├─ pdf/      导出的 PDF（最终投递文件）
+└─ README.md
 ```
 
-- `typ/`：模板源文件，只负责排版内容。
-- `images/`：图片素材（头像等）。
-- `pdf/`：导出后的 PDF 文件。
+## 三个模板怎么选
 
-## 模板文件说明
+- `typ/no_profile_picture.typ`：无头像，简洁稳妥，投递系统友好。
+- `typ/with_profile_picture.typ`：有头像，信息完整。
+- `typ/resume_classic_with_photo.typ`：有头像，偏传统版式。
 
-### 1) `typ/no_profile_picture.typ`
-- 无头像版本。
-- 适合投递系统、正文信息优先的场景。
+## 5 分钟使用流程（最简单）
 
-### 2) `typ/with_profile_picture.typ`
-- 有头像版本。
-- 默认头像路径已改为：`#image("../images/image.png", ...)`。
+1. 安装 VS Code。
+2. 在 VS Code 扩展里安装 `Tinymist Typst`。
+3. 打开本项目文件夹。
+4. 打开你要用的模板（`typ/` 里的 `.typ` 文件）。
+5. 直接替换里面的姓名、电话、邮箱、教育经历、项目经历等内容。
+6. 如果要头像，把头像文件放到 `images/` 目录，文件名建议保持 `image.png`。
+7. 在 Typst 预览里导出 PDF，并保存到 `pdf/` 目录。
 
-## 快速开始（VS Code + Tinymist）
+## 头像放置规则（很重要）
 
-### 1. 安装插件
-- 打开 VS Code 扩展市场（`Ctrl+Shift+X`）。
-- 安装 `Tinymist Typst`。
-- 建议额外安装 `vscode-pdf` 方便查看导出的 PDF。
-
-### 2. 打开模板并编辑
-- 打开 `typ/no_profile_picture.typ` 或 `typ/with_profile_picture.typ`。
-- 替换模板中的占位符内容（如 `姓名`、`XXXXX` 等）。
-
-### 3. 实时预览
-- Tinymist 会提供实时预览。
-- 如果没有自动显示预览：
-  - 命令面板（`Ctrl+Shift+P`）执行 `Typst: Open Preview`。
-
-### 4. 导出 PDF（推荐导出到 `pdf/`）
-
-#### 方式 A：Tinymist 导出
-- 在预览窗口点击导出。
-- 若导出到了 `typ/` 目录，可手动移动到 `pdf/`。
-
-#### 方式 B：Typst CLI（路径最稳定，推荐）
-在仓库根目录执行：
-
-```bash
-typst compile typ/no_profile_picture.typ pdf/no_profile_picture.pdf
-typst compile typ/with_profile_picture.typ pdf/with_profile_picture.pdf
-```
-
-## 路径规则（重点）
-
-Typst 的相对路径是“相对于当前 `.typ` 文件”解析，不是相对于仓库根目录。
-
-- 当前模板在 `typ/` 目录。
-- 图片在 `images/` 目录。
-- 所以在 `typ/with_profile_picture.typ` 中，图片应写为：
+- 推荐路径：`images/image.png`
+- 模板里头像写法应为：
 
 ```typst
 #image("../images/image.png", width: 26mm, height: auto)
 ```
 
-如果你把头像改成 `images/my_photo.jpg`，则模板里应写：
+如果你改成了别的文件名，比如 `my_photo.jpg`，就把模板中的路径同步改成：
 
 ```typst
 #image("../images/my_photo.jpg", width: 26mm, height: auto)
 ```
 
-## 自定义指南
+## 每次改简历时，照这个顺序
 
-### 1. 页面与字体
-- 页面边距：`#set page(margin: (x: 15mm, y: 12mm))`
-- 正文字号：`size: 10.5pt`
-- 默认中文字体：`Noto Sans CJK SC`
+1. 打开 `typ/` 里的模板文件。
+2. 只改文字内容，不改排版代码（除非你知道自己在做什么）。
+3. 导出 PDF 到 `pdf/`。
+4. 打开导出的 PDF 快速检查一遍（错别字、时间、联系方式、分页）。
 
-当前模板默认：
+## 常见问题（直接照做）
+
+### 1. 报错：`unknown font family`
+
+原因：系统没有这个字体。  
+处理：把模板里的字体改成你电脑有的字体，推荐保留：
 
 ```typst
 #set text(font: ("Noto Sans CJK SC"), size: 10.5pt, lang: "zh")
 ```
 
-### 2. 标题样式
-- 标题颜色：`rgb("#4682b4")`
-- 分割线粗细：`thickness: 0.5pt`
+### 2. 报错：`image not found`
 
-### 3. 头像大小
-在 `with_profile_picture.typ` 里调整：
+按顺序检查：
 
-```typst
-#image("../images/image.png", width: 26mm, height: auto)
-```
+1. 头像是否真的在 `images/` 目录。
+2. 文件名是否和模板里完全一致（大小写也要一致）。
+3. 模板里的路径是否是 `../images/xxx`。
 
-- 增大头像：调大 `width`
-- 保持比例：`height: auto`
+### 3. 没看到预览窗口
 
-## 常见问题
+在 VS Code 按 `Ctrl+Shift+P`，输入并执行：`Typst: Open Preview`。
 
-### 1) `unknown font family`
-原因：系统没有安装模板设置的字体。
-
-解决：
-- 保持默认字体并安装 `Noto Sans CJK`；或
-- 把 `#set text(font: (...))` 改成你系统已安装的字体。
-
-示例：
+### 4. 信息太长错行了
 
 ```typst
-#set text(font: ("Microsoft YaHei"), size: 10.5pt, lang: "zh")
+columns: (1fr, 1fr, 2fr),
 ```
+这段代码的含义就是下面信息分为三部分以及每部分的比例为1：1：2，如果错行了就放大对应的部分
 
-### 2) `image not found`
-原因：图片路径和当前 `.typ` 文件目录层级不匹配。
+## 给小白的建议
 
-排查顺序：
-1. 确认图片是否在 `images/`。
-2. 确认模板是否在 `typ/`。
-3. 确认模板内路径是否为 `../images/xxx`。
-
-### 3) PDF 导出位置混乱
-- 推荐统一用 CLI 导出到 `pdf/`，命令见上文。
-- 若用插件导出，建议导出后统一移动到 `pdf/`。
-
-## 建议工作流
-
-1. 只在 `typ/` 内编辑模板。
-2. 所有素材统一放在 `images/`。
-3. 每次导出覆盖 `pdf/` 内同名文件。
-4. 提交代码前检查：路径是否仍是 `../images/...`。
+- 第一次使用，优先选 `no_profile_picture.typ`，最不容易出错。
+- 一次只改一个模块，改完就导出 PDF 检查。
+- 最终投递前，统一用 `pdf/` 里的文件。
