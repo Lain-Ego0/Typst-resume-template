@@ -46,24 +46,53 @@ Typst-resume-template/
 
 ## 预览
 
-| 标题 | 标题 | 标题 |
-| --- | --- | --- |
-| bracket_index_titles | color_cards | minimal_ats |
-| ![bracket_index_titles](images/bracket_index_titles_page_1.png) | ![color_cards](images/color_cards_page_1.png) | ![minimal_ats](images/minimal_ats_page_1.png) |
-| newspaper_two_column | no_profile_picture | ref_alta_typst |
-| ![newspaper_two_column](images/newspaper_two_column_page_1.png) | ![no_profile_picture](images/no_profile_picture_page_1.png) | ![ref_alta_typst](images/ref_alta_typst_page_1.png) |
-| ref_attractive_typst_resume | ref_bamboovir_typst_resume_template | ref_brilliant_cv |
-| ![ref_attractive_typst_resume](images/ref_attractive_typst_resume_page_1.png) | ![ref_bamboovir_typst_resume_template](images/ref_bamboovir_typst_resume_template_page_1.png) | ![ref_brilliant_cv](images/ref_brilliant_cv_page_1.png) |
-| ref_chicv | ref_chinese_resume_in_typst | ref_golixp_resume_zh_cn |
-| ![ref_chicv](images/ref_chicv_page_1.png) | ![ref_chinese_resume_in_typst](images/ref_chinese_resume_in_typst_page_1.png) | ![ref_golixp_resume_zh_cn](images/ref_golixp_resume_zh_cn_page_1.png) |
-| ref_moderncv_typst | ref_resume_typ | ref_typst_cv_miku |
-| ![ref_moderncv_typst](images/ref_moderncv_typst_page_1.png) | ![ref_resume_typ](images/ref_resume_typ_page_1.png) | ![ref_typst_cv_miku](images/ref_typst_cv_miku_page_1.png) |
-| ref_typst_project_rw1SLr0IIZZnCrkrsypRQF | ref_uniquecv_typst | resume_classic_with_photo |
-| ![ref_typst_project_rw1SLr0IIZZnCrkrsypRQF](images/ref_typst_project_rw1SLr0IIZZnCrkrsypRQF_page_1.png) | ![ref_uniquecv_typst](images/ref_uniquecv_typst_page_1.png) | ![resume_classic_with_photo](images/resume_classic_with_photo_page_1.png) |
-| sidebar_tech_blue | side_label_titles | split_banner_titles |
-| ![sidebar_tech_blue](images/sidebar_tech_blue_page_1.png) | ![side_label_titles](images/side_label_titles_page_1.png) | ![split_banner_titles](images/split_banner_titles_page_1.png) |
-| with_profile_picture |  |  |
-| ![with_profile_picture](images/with_profile_picture_page_1.png) |  |  |
+> GitHub 的 Markdown 表格会把多列图片压得很窄，这里改为两列预览。
+> 点击图片可查看原图。
+
+<p>
+  <a href="images/bracket_index_titles_page_1.png"><img src="images/bracket_index_titles_page_1.png" alt="bracket_index_titles" width="48%" /></a>
+  <a href="images/color_cards_page_1.png"><img src="images/color_cards_page_1.png" alt="color_cards" width="48%" /></a>
+</p>
+<p>
+  <a href="images/minimal_ats_page_1.png"><img src="images/minimal_ats_page_1.png" alt="minimal_ats" width="48%" /></a>
+  <a href="images/newspaper_two_column_page_1.png"><img src="images/newspaper_two_column_page_1.png" alt="newspaper_two_column" width="48%" /></a>
+</p>
+<p>
+  <a href="images/no_profile_picture_page_1.png"><img src="images/no_profile_picture_page_1.png" alt="no_profile_picture" width="48%" /></a>
+  <a href="images/ref_alta_typst_page_1.png"><img src="images/ref_alta_typst_page_1.png" alt="ref_alta_typst" width="48%" /></a>
+</p>
+<p>
+  <a href="images/ref_attractive_typst_resume_page_1.png"><img src="images/ref_attractive_typst_resume_page_1.png" alt="ref_attractive_typst_resume" width="48%" /></a>
+  <a href="images/ref_bamboovir_typst_resume_template_page_1.png"><img src="images/ref_bamboovir_typst_resume_template_page_1.png" alt="ref_bamboovir_typst_resume_template" width="48%" /></a>
+</p>
+<p>
+  <a href="images/ref_brilliant_cv_page_1.png"><img src="images/ref_brilliant_cv_page_1.png" alt="ref_brilliant_cv" width="48%" /></a>
+  <a href="images/ref_chicv_page_1.png"><img src="images/ref_chicv_page_1.png" alt="ref_chicv" width="48%" /></a>
+</p>
+<p>
+  <a href="images/ref_chinese_resume_in_typst_page_1.png"><img src="images/ref_chinese_resume_in_typst_page_1.png" alt="ref_chinese_resume_in_typst" width="48%" /></a>
+  <a href="images/ref_golixp_resume_zh_cn_page_1.png"><img src="images/ref_golixp_resume_zh_cn_page_1.png" alt="ref_golixp_resume_zh_cn" width="48%" /></a>
+</p>
+<p>
+  <a href="images/ref_moderncv_typst_page_1.png"><img src="images/ref_moderncv_typst_page_1.png" alt="ref_moderncv_typst" width="48%" /></a>
+  <a href="images/ref_resume_typ_page_1.png"><img src="images/ref_resume_typ_page_1.png" alt="ref_resume_typ" width="48%" /></a>
+</p>
+<p>
+  <a href="images/ref_typst_cv_miku_page_1.png"><img src="images/ref_typst_cv_miku_page_1.png" alt="ref_typst_cv_miku" width="48%" /></a>
+  <a href="images/ref_typst_project_rw1SLr0IIZZnCrkrsypRQF_page_1.png"><img src="images/ref_typst_project_rw1SLr0IIZZnCrkrsypRQF_page_1.png" alt="ref_typst_project_rw1SLr0IIZZnCrkrsypRQF" width="48%" /></a>
+</p>
+<p>
+  <a href="images/ref_uniquecv_typst_page_1.png"><img src="images/ref_uniquecv_typst_page_1.png" alt="ref_uniquecv_typst" width="48%" /></a>
+  <a href="images/resume_classic_with_photo_page_1.png"><img src="images/resume_classic_with_photo_page_1.png" alt="resume_classic_with_photo" width="48%" /></a>
+</p>
+<p>
+  <a href="images/sidebar_tech_blue_page_1.png"><img src="images/sidebar_tech_blue_page_1.png" alt="sidebar_tech_blue" width="48%" /></a>
+  <a href="images/side_label_titles_page_1.png"><img src="images/side_label_titles_page_1.png" alt="side_label_titles" width="48%" /></a>
+</p>
+<p>
+  <a href="images/split_banner_titles_page_1.png"><img src="images/split_banner_titles_page_1.png" alt="split_banner_titles" width="48%" /></a>
+  <a href="images/with_profile_picture_page_1.png"><img src="images/with_profile_picture_page_1.png" alt="with_profile_picture" width="48%" /></a>
+</p>
 
 ## 快速使用
 
