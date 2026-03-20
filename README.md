@@ -2,6 +2,18 @@
 
 这个仓库包含多套可直接修改的 Typst 简历模板，并提供 PDF 导出与图片转换脚本。
 
+## 文档目录
+
+- [目录结构](#目录结构)
+- [模板总览](#模板总览)
+- [预览](#预览)
+- [快速使用](#快速使用)
+- [依赖安装](#依赖安装)
+- [进阶](#进阶)
+- [常见问题](#常见问题)
+- [说明](#说明)
+- [致谢](#致谢)
+
 ## 目录结构
 
 ```text
@@ -147,9 +159,12 @@ brew install typst
 cargo install --locked typst-cli
 ```
 
-或者直接使用VS Code 插件：`Tinymist Typst`
+**推荐：直接使用VS Code + `Tinymist Typst`插件**
 
 ### 2) 字体下载与安装
+
+- 为了减少环境差异，模板都设置了字体回退列表；若你已安装对应字体，显示会更接近参考项目。
+- 如果未安装推荐字体，`typst compile` 可能给出 `unknown font family` warning，但模板仍可正常编译。
 
 > 下面命令覆盖了这些模板常见字体：
 > Noto/Source Han CJK、IBM Plex、Roboto、Source Sans、Mulish、Nerd Font Symbols。
@@ -187,7 +202,7 @@ done
 fc-cache -f -v
 ```
 
-### 3) `typst-cv-miku` 里提到的 `kpfonts`（可选）
+### 3) `typst-cv-miku` 里提到的 `kpfonts`
 
 如果你要尽量贴近该项目原效果：
 
@@ -198,7 +213,7 @@ tlmgr install kpfonts
 
 ## 进阶
 
-### 1) 仓库内安装 Tinymist（不依赖全局环境）
+### 1) 仓库内安装 Tinymist
 
 适合不想改系统环境，或在受限环境（如部分 Snap 会话）里使用：
 
@@ -272,12 +287,6 @@ export PATH="$(pwd)/.local/bin:$PATH"
 ### 3. 看不到预览
 
 在 VS Code 执行 `Typst: Open Preview`。
-
-## 说明
-
-- 新增的 12 个 `ref_*.typ` 用于统一维护与二次修改。
-- 为了减少环境差异，模板都设置了字体回退列表；若你已安装对应字体，显示会更接近参考项目。
-- 如果未安装推荐字体，`typst compile` 可能给出 `unknown font family` warning，但模板仍可正常编译。
 
 ## 致谢
 
